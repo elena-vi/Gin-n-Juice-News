@@ -1,0 +1,25 @@
+{
+  "name": "Gin-n-Juice",
+  "version": "1.0.0",
+  "description": "Webframework ",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo \"Nothing to start yet, captain!\"",
+    "test": "./node_modules/.bin/mocha --reporter spec --recursive -R nyan"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elena-vi/Gin-n-Juice.git"
+  },
+  "author": "Elena, Andy, Daniel & Matt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elena-vi/Gin-n-Juice/issues"
+  },
+  "homepage": "https://github.com/elena-vi/Gin-n-Juice#readme",
+  "dependencies": {
+    "http-server": "^0.9.0",
+    "mocha": "^2.5.3",
+    "zombie": "^4.2.1"
+  }
+}
