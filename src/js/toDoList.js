@@ -1,16 +1,16 @@
 'use strict';
 
-function ToDoList () {
+function toDoList () {
   this.list = [];
 };
 
-ToDoList.prototype = {
+toDoList.prototype = {
 
   getList: function() {
     return this.list;
   },
 
-  addList: function(string) {
+  addTask: function(string) {
     this.list.push( {task: string, done: false} );
   },
 
@@ -22,4 +22,4 @@ ToDoList.prototype = {
 
 };
 
-module.exports = ToDoList;
+// module.exports = ToDoList;
