@@ -6,3 +6,10 @@ To init ```$ npm install```
 To run ```$ npm start``` --> running on http://localhost:8080/
 
 To test ```$ npm test```
+
+### What it is?
+#### Gin 
+The router 
+
+#### Juice 
+The templater
