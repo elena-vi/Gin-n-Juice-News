@@ -4,7 +4,7 @@
   "description": "Webframework ",
   "main": "index.js",
   "scripts": {
-    "start": "echo \"Nothing to start yet, captain!\"",
+    "start": "http-server ./src/",
     "test": "./node_modules/.bin/mocha --reporter spec --recursive -R nyan"
   },
   "repository": {
