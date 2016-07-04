@@ -1,6 +1,6 @@
 var routes = {};
-function route (path, templateId, controller) {
-  routes[path] = {templateId: templateId, controller: controller};
+function route (path, template) {
+  routes[path] = {template: template};
 }
 
 var view = null;
@@ -8,9 +8,9 @@ function router () {
     view = view || document.getElementById('view');
     var url = location.hash.slice(1) || '/';
     var route = routes[url];
-    if (view && route.controller) {
-			 // view.innerHTML = route.templateId;
-	    var template = "../templates/"+route.templateId+".html";
+    if (view) {
+			 // view.innerHTML = route.template;
+	    var template = "../templates/"+route.template+".html";
 	    var ajax = new XMLHttpRequest();
 			ajax.open("GET", template, false);
 			ajax.send();

@@ -2,8 +2,12 @@
 
 console.log("Hello World!");
 
-route('/', 'home', function () {});
+route('/', 'home', 'bo');
 
-route('/page1', 'something', function () {});
+route('/page1', 'something');
 
-route('/page2', 'other', function () {});
+route('/page2', 'other');
+
+function function_name () {
+	console.log("yes/.");
+}
