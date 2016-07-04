@@ -4,8 +4,7 @@
   "description": "Webframework ",
   "main": "index.js",
   "scripts": {
-
-    "start": "http-server ./src/ --compilers js:babel-core/register",
+    "start": "http-server ./src/ -p 3000",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive -R nyan"
   },
   "babel": {
