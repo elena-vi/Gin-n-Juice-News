@@ -4,7 +4,8 @@
   "description": "Webframework ",
   "main": "index.js",
   "scripts": {
-    "start": "echo \"Nothing to start yet, captain!\"",
+
+    "start": "http-server ./src/ --compilers js:babel-core/register",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive -R nyan"
   },
   "babel": {
