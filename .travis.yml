@@ -6,6 +6,5 @@ before_install:
   - sudo apt-get update -qq
 
 install:
-  - cd app
   - npm install
 
