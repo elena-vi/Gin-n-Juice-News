@@ -1,25 +1,23 @@
-'use strict';
 
-function toDoList () {
-  this.list = [];
-};
+(function(exports) {
+  function toDoList () {
+    this.list = [];
+  };
 
-toDoList.prototype = {
+  toDoList.prototype = {
 
-  getList: function() {
-    return this.list;
-  },
+    getList: function() {
+      return this.list;
+    },
 
-  addTask: function(string) {
-    this.list.push( {task: string, done: false} );
-  },
+    addTask: function(string) {
+      this.list.push( {task: string, done: false} );
+    },
 
-  markTask: function(indexOfTask) {
-    this.list[indexOfTask].done = true;
-  }
+    markTask: function(indexOfTask) {
+      this.list[indexOfTask].done = true;
+    }
 
-
-
-};
-
-// module.exports = ToDoList;
+  };
+  exports.toDoList = toDoList
+})(this);

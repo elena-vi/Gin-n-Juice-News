@@ -1,6 +1,5 @@
-import { expect } from 'chai';
-var toDoList = require('../src/js/toDoList');
-
+var toDoList = require('../src/js/toDoList').toDoList;
+var expect = require('chai').expect
 describe('check test', () => {
 
   it('5 + 5 = 10', () => {
@@ -23,7 +22,7 @@ describe('toDoList', () => {
 
     it('adds to the list', () => {
       var todolist = new toDoList();
-      todolist.addList('Hello');
+      todolist.addTask('Hello');
       expect(todolist.getList()).to.contain({task: "Hello", done: false});
     })
   });
@@ -32,7 +31,7 @@ describe('toDoList', () => {
 
     it('marks an item as complete', () => {
       var todolist = new toDoList();
-      todolist.addList('Hello');
+      todolist.addTask('Hello');
       todolist.markTask(0);
       expect(todolist.getList()).to.contain({task: "Hello", done: true});
     });

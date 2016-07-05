@@ -10,17 +10,25 @@ document.addEventListener("DOMContentLoaded", function(event) {
     todolist.markTask(4)
     console.log(todolist.getList())
 
+  var createElement = function(bind_to_element_with_id, element_tag, text) {
+    var element = document.createElement(element_tag)
+    if (text != undefined) {
+      var content = document.createTextNode(text)
+      element.appendChild(content)
+    }
+    document.getElementById(bind_to_element_with_id).appendChild(element)
+  }
 
 
   var createList = function(element_id,array) {
-    var ul = document.createElement('ul');
+    var ul = document.createElement('ul')
     for(var i = 0; i < array.length; i++) {
     	var li = document.createElement('li')
-    	var content = document.createTextNode(array[i]);
-      li.appendChild(content);
-      ul.appendChild(li);
+    	var content = document.createTextNode(array[i])
+      li.appendChild(content)
+      ul.appendChild(li)
     }
-    document.getElementById(element_id).appendChild(ul);
+    document.getElementById(element_id).appendChild(ul)
   }
 
   var createTodoList = function(element_id,array) {
@@ -41,4 +49,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   }
 
 createTodoList('to-do-list', todolist.getList())
+createElement('placeholder', 'div', 'TEST')
+createElement('placeholder-2', 'h2')
 });
