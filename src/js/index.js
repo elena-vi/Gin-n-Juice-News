@@ -26,6 +26,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
     document.getElementById(element_id).appendChild(ul);
   }
 
+  var cleanFunction = function() {
+    
+  }
+
   createTodoList('to-do-list', todolist.getList())
 
 
