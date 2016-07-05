@@ -2,6 +2,7 @@
 
 route('/', 'todolist', function() {
   console.log("why not zoidberg?!");
+  toDoFuntionality();
 });
 
 route('/page1', 'something', function() {
