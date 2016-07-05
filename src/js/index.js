@@ -3,10 +3,10 @@
 document.addEventListener("DOMContentLoaded", function(event) {
   var todolist = new toDoList()
 
-document.querySelector("form").addEventListener("submit", function(event) {
-    event.preventDefault();
-    console.log(event);
-    // todolist.addTask();
+  document.getElementById("todo-submit").addEventListener("click", function(event) {
+    var task = document.getElementById("todo-task").value;
+    todolist.addTask(task);
+    createTodoList('to-do-list', todolist.getList())
   })
 
   var createTodoList = function(element_id,array) {
@@ -27,5 +27,6 @@ document.querySelector("form").addEventListener("submit", function(event) {
   }
 
   createTodoList('to-do-list', todolist.getList())
+
 
 });
