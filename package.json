@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "http-server ./src/ -p 3000",
-    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive -R nyan"
+    "test": "mocha --compilers js:babel-core/register --recursive -R nyan && istanbul report text-summary lcov"
   },
   "babel": {
     "presets": [
@@ -31,6 +31,9 @@
     "babel-cli": "^6.10.1",
     "babel-core": "^6.10.4",
     "babel-preset-es2015": "^6.9.0",
-    "chai": "^3.5.0"
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.9",
+    "istanbul": "^0.4.4",
+    "mocha-lcov-reporter": "^1.2.0"
   }
 }
