@@ -1,4 +1,4 @@
-var toDoList = require('../src/js/toDoList').toDoList;
+var toDoList = require('../../src/js/toDoList').toDoList;
 var expect = require('chai').expect
 describe('check test', () => {
 
