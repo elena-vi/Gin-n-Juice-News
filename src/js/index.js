@@ -1,13 +1,12 @@
-// var gin = '';
+// route (path, template, contoller)
+route('/', 'home', function() {
+	console.log("why not zoidberg?!");
+});
 
-console.log("Hello World!");
+route('/page1', 'something', function() {
+	console.log("something else?!");
+});
 
-route('/', 'home', 'bo');
-
-route('/page1', 'something');
-
-route('/page2', 'other');
-
-function function_name () {
-	console.log("yes/.");
-}
+route('/page2', 'other', function () {
+	console.log("OMFG IT WORKS");
+});
