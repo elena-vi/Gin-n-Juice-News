@@ -6,11 +6,16 @@ document.addEventListener("DOMContentLoaded", function(event){
     removeChildElements("to-do-list")
     createTodoList('to-do-list', todolist.getList())
   })
-
+  document.getElementById("to-do-list").addEventListener("click", function(event){
+    todolist.markTask(event.srcElement.name);
+    removeChildElements("to-do-list")
+    createTodoList('to-do-list', todolist.getList())
+  })
   var createTodoList = function(element_id,array) {
     var ul = document.createElement('ul');
     for(var i = 0; i < array.length; i++) {
       var li = document.createElement('li')
+      li.id = "task-" + i
       var content = document.createTextNode(array[i].task)
       if (array[i].done === true) {
         var s = document.createElement('s')
@@ -19,6 +24,12 @@ document.addEventListener("DOMContentLoaded", function(event){
       } else {
         li.appendChild(content)
       }
+      var button = document.createElement("input")
+      button.type = "button"
+      button.name =  i
+      button.value = "done"
+      button.className = "done"
+      li.appendChild(button);
       ul.appendChild(li);
     }
     document.getElementById(element_id).appendChild(ul);
