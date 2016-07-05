@@ -7,6 +7,12 @@ a {
 	color: #00B7FF;
 }
 
+input[submit], button {
+  border-radius: 1px;
+  background: #fbc02d;
+  border: none;
+}
+
 .gnj:before{
 	content: "\f000";
 	display: inline-block;
