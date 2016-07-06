@@ -10,3 +10,9 @@ route('/page1', 'something', function() {
 route('/page2', 'other', function () {
 	console.log("OMFG IT WORKS");
 });
+
+
+// Listen on hash change:
+window.addEventListener('hashchange', router);
+// Listen on page load:
+window.addEventListener('load', router);
