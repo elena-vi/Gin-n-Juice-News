@@ -1,14 +1,14 @@
 (function(){
 	var cache = {};
 
-	this.juice = function juice(template, data){
-		// Figure out if we're getting a template, or if we need to
-		// load the template - and be sure to cache the result.
-		var fn = !/\W/.test(template) ?
-		cache[template] = cache[template] ||
-		juice(peelTemplate(template)) :
+	this.juice = function juice(templateName, data){
+		// Figure out if we're getting a templateName, or if we need to
+		// load the templateName - and be sure to cache the result.
+		var templater = !/\W/.test(templateName) ?
+		cache[templateName] = cache[templateName] ||
+		juice(peelTemplate(templateName)) :
 
-		// Generate a reusable function that will serve as a template
+		// Generate a reusable function that will serve as a templateName
 		// generator (and which will be cached).
 		new Function("obj",
 		"var p=[],print=function(){p.push.apply(p,arguments);};" +
@@ -16,8 +16,8 @@
 		// Introduce the data as local variables using with(){}
 		"with(obj){p.push('" +
 
-		// Convert the template into pure JavaScript
-		template
+		// Convert the templateName into pure JavaScript
+		templateName
 		.replace(/[\r\t\n]/g, " ")
 		.split("#{yo").join("\t")
 		.replace(/((^|\}\})[^\t]*)'/g, "$1\r")
@@ -28,14 +28,14 @@
 		+ "');}return p.join('');");
 
 		// Provide some basic currying to the user
-		return data ? fn( data ) : fn;
+		return data ? templater( data ) : templater;
 	};
 })();
 
-function peelTemplate(template) {
-	var template = "../templates/"+template+".html";
+function peelTemplate(templateName) {
+	var templateName = "../templates/"+templateName+".html";
 	var ajax = new XMLHttpRequest();
-	ajax.open("GET", template, false);
+	ajax.open("GET", templateName, false);
 	ajax.send();
 	return ajax.responseText
 }

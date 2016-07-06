@@ -4,7 +4,7 @@ route('/', 'home', function(params) {
 });
 
 route('/fullArticle', 'fullArticle', function(params) {
-  this.title = params
+  this.title = params;
   console.log(params)
 });
 
