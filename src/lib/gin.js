@@ -7,10 +7,11 @@ var view = null;
 
 function router () {
   view = view || document.getElementById('view');
-  var url = location.hash.slice(1) || '/';
+  var url = "/" + location.hash.slice(1).split('/')[1]
+  var params = location.hash.slice(1).split('/')[2]
   var route = routes[url];
   if (view && route.controller) {
-    view.innerHTML = juice(route.template, new route.controller());
+    view.innerHTML = juice(route.template, new route.controller(params));
   }
 }
 

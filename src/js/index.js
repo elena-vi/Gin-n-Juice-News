@@ -1,13 +1,13 @@
 // route (path, template, contoller)
-route('/', 'home', function() {
-	console.log("why not zoidberg?!");
+route('/', 'home', function(params) {
+  console.log(params)
 });
 
-route('/fullArticle', 'fullArticle', function() {
-	this.title = "Kitty makes mad stacks";
+route('/fullArticle', 'fullArticle', function(params) {
+  this.title = params
+  console.log(params)
 });
 
-route('/summaryArticle', 'summaryArticle', function () {
-	console.log("OMFG IT WORKS");
+route('/summaryArticle', 'summaryArticle', function (params) {
+  console.log(params)
 });
-
