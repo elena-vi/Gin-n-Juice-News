@@ -4,15 +4,10 @@ route('/', 'home', function() {
 });
 
 route('/fullArticle', 'fullArticle', function() {
-	console.log("something else?!");
+	this.title = "Kitty makes mad stacks";
 });
 
 route('/summaryArticle', 'summaryArticle', function () {
 	console.log("OMFG IT WORKS");
 });
 
-
-// Listen on hash change:
-window.addEventListener('hashchange', router);
-// Listen on page load:
-window.addEventListener('load', router);
