@@ -3,11 +3,11 @@ route('/', 'home', function() {
 	console.log("why not zoidberg?!");
 });
 
-route('/page1', 'something', function() {
+route('/fullArticle', 'fullArticle', function() {
 	console.log("something else?!");
 });
 
-route('/page2', 'other', function () {
+route('/summaryArticle', 'summaryArticle', function () {
 	console.log("OMFG IT WORKS");
 });
 
