@@ -1,13 +1,12 @@
 // route (path, template, contoller)
-route('/', 'home', function(params) {
-  console.log(params)
+route('/', 'home', function (params) {
+  this.snoopDogg = 'Rollin down the street, <br> smokin indo, sippin on gin and juice..'
 });
 
-route('/fullArticle', 'fullArticle', function(params) {
-  this.title = params;
-  console.log(params)
+route('/gin', 'ginTemplate', function (params) {
+  this.title = "Gin";
 });
 
-route('/summaryArticle', 'summaryArticle', function (params) {
-  console.log(params)
+route('/juice', 'juiceTemplate', function (params) {
+  this.title = "Juice";
 });

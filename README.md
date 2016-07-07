@@ -1,5 +1,5 @@
 # :tropical_drink: Gin-n-Juice
-A webframe work 
+A web framework 
 
 ## What is it?
 
@@ -13,7 +13,7 @@ route('/path', 'template name', function() {
 ```
 
 ### :tangerine: Juice
-The templater, takes your template and interpelates js using the dank syntax:
+The templater, takes your template and interpolates js using the dank syntax:
 ``` #{yo= yourVar } ``` 
 
 # To do!
