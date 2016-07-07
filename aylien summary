@@ -1,0 +1,15 @@
+curl "http://news-summary-api.herokuapp.com/aylien?apiRequestUrl=https://api.aylien.com/api/v1/summarize?url=https://www.theguardian.com/politics/live/2016/jul/06/chilcot-report-live-inquiry-war-iraq"
+
+{
+"text": "Tony Blair wrote to George Bush eight months before the Iraq invasion to offer his unqualified backing for war, claiming that the removal of Saddam Hussein would “free up the region” even if ordinary Iraqis may “feel ambivalent about being invaded” and could fight back.\n\nIn an six-page memo marked secret and personal, the British prime minister told Bush: “I will be with you whatever” and set out a plan to persuade Britain Saddam must be toppled.\n\nHe warned Bush: “In Britain, right now I couldn’t be sure of support from parliament, party, public or even some of the cabinet”, and said that winning political support in Europe would be tougher still.\n\nBut he then set out a recipe for providing evidence against Iraq, according to the memo released as part of the Chilcot inquiry.\n\n“If we recapitulate all the WMD evidence; add his attempt to secure nuclear capability; and, as seems possible, add on al-Qaida link, it will be hugely persuasive over here,” he said. “Plus, of course, the abhorrent nature of the regime”.\n\nBlair devoted six lines to “post-Saddam” planning. He said his toppling “should lead in time to a democratic Iraq governed by the people”, but concluded “just swapping one dictator for another seems inconsistent with our values”.\n\nIn the memo, Blair was clear about the difficulties ahead. “The planning on this and the strategy are the toughest yet,” he said. “This is not Kosovo. This is not Afghanistan. It is not even the Gulf war.”\n\n“The military part of this is hazardous,” he said. “Getting rid of Saddam is the right thing to do. He is a potential threat. He could be contained. But containment as we found with al-Qaida, is always risky. His departure would free up the region. And his regime is probably, with the possible exception of North Korea, the most brutal and inhumane in the world.”",
+
+"sentences": ["Tony Blair wrote to George Bush eight months before the Iraq invasion to offer his unqualified backing for war, claiming that the removal of Saddam Hussein would “free up the region” even if ordinary Iraqis may “feel ambivalent about being invaded” and could fight back.",
+"In an six-page memo marked secret and personal, the British prime minister told Bush: “I will be with you whatever” and set out a plan to persuade Britain Saddam must be toppled.",
+"But he then set out a recipe for providing evidence against Iraq, according to the memo released as part of the Chilcot inquiry.",
+"“If we recapitulate all the WMD evidence; add his attempt to secure nuclear capability; and, as seems possible, add on al-Qaida link, it will be hugely persuasive over here,” he said.",
+"In the memo, Blair was clear about the difficulties ahead."]
+}%
+
+
+
+v
