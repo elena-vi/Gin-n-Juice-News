@@ -3,7 +3,7 @@ A webframe work
 
 ## What is it?
 
-### Gin
+### :cocktail: Gin
 The router and controller, routes are declared like this: 
 
 ```
@@ -12,16 +12,16 @@ route('/path', 'template name', function() {
 });
 ```
 
-### Juice
+### :tangerine: Juice
 The templater, takes your template and interpelates js using the dank syntax:
 ``` #{yo= yourVar } ``` 
 
-# To do!
+# :thinking_face: To do!
 
 - Find a more effienct way of pulling in templates.
 
-# Collaborators
-[Elena Vilimaitė](https://github.com/elena-vi)
+# :busts_in_silhouette: Collaborators
+[Elena :heart_eyes_cat: Vilimaitė](https://github.com/elena-vi)
 
 [Andy "DevOps" Bell](https://github.com/andy-bell)
 
