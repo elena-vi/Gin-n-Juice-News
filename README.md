@@ -14,13 +14,18 @@ route('/path', 'template name', function() {
 
 ### :tangerine: Juice
 The templater, takes your template and interpolates js using the dank syntax:
-``` #{yo= yourVar } ``` 
+``` #{yo= yourVar } ``
 
-# To do!
+## :mask: Testing
+Unit testing done using [jasmine](http://jasmine.github.io/), the tests can be found in ```test/spec``` 
+
+Run the test in the browser by opening ```test/SpecRunner.html```
+
+## :sweat: Still left to do!
 
 - Find a more effienct way of pulling in templates.
 
-# :busts_in_silhouette: Collaborators
+## :busts_in_silhouette: Collaborators
 [Elena :heart_eyes_cat: Vilimaitė](https://github.com/elena-vi)
 
 [Andy "DevOps" Bell](https://github.com/andy-bell)
