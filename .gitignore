@@ -1,7 +1,7 @@
-<<<<<<< HEAD
+
 node_modules/
 *.log
-=======
+
 # Logs
 logs
 *.log
@@ -42,4 +42,5 @@ jspm_packages
 
 
 package.json
->>>>>>> 309daa9225919f919aaffc2e57f089770bdb8f5a
+
+coverage/

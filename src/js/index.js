@@ -11,3 +11,9 @@ route('/gin', 'ginTemplate', function (params) {
 route('/juice', 'juiceTemplate', function (params) {
   this.title = "Juice";
 });
+
+
+// Listen on hash change:
+window.addEventListener('hashchange', router);
+// Listen on page load:
+window.addEventListener('load', router);
