@@ -4,15 +4,21 @@ A webframe work
 ## What is it?
 
 ### Gin
-The router and controller 
+The router and controller, routes are declared like this: 
+
+```
+route('/path', 'template name', function() {
+  this.yourVar = "Declared variables can be interpolated into templates!";
+});
+```
 
 ### Juice
-The templater 
+The templater, takes your template and interpelates js using the dank syntax:
+``` #{yo= yourVar } ``` 
 
 # To do!
-- Kill recursion 
 
-- Test it 
+- Find a more effienct way of pulling in templates.
 
 # Collaborators
 [Elena Vilimaitė](https://github.com/elena-vi)
