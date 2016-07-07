@@ -16,7 +16,7 @@ route('/path', 'template name', function() {
 The templater, takes your template and interpelates js using the dank syntax:
 ``` #{yo= yourVar } ``` 
 
-# :thinking_face: To do!
+# To do!
 
 - Find a more effienct way of pulling in templates.
 
