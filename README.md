@@ -1,24 +1,35 @@
-# Gin-n-Juice
-Week 7 yooo
+# :tropical_drink: Gin-n-Juice
+A web framework
 
-To init ```$ npm install```
+## What is it?
 
-To run ```$ npm start``` --> running on http://localhost:8080/
+### :cocktail: Gin
+The router and controller, routes are declared like this:
 
-To test ```$ npm test```
-
-### What it is?
-#### Gin 
-The router:
-
-Define the route like this:
 ```
-	route('/path/of/route', 'template', function() {
-		// magics to run before rendering the template
-	});
+route('/path', 'template name', function() {
+  this.yourVar = "Declared variables can be interpolated into templates!";
+});
 ```
 
-Keep your gin in a ```lib/``` folder and your templates in a ```templates/``` folder on the same level yooo 
+### :tangerine: Juice
+The templater, takes your template and interpolates js using the dank syntax:
+``` #{yo= yourVar } ``
 
-#### Juice 
-The template engine.  
+## :mask: Testing
+Unit testing done using [jasmine](http://jasmine.github.io/), the tests can be found in ```test/spec```
+
+Run the test in the browser by opening ```test/SpecRunner.html```
+
+## :sweat: Still left to do!
+
+- Find a more effienct way of pulling in templates.
+
+## :busts_in_silhouette: Collaborators
+[Elena :heart_eyes_cat: Vilimaitė](https://github.com/elena-vi)
+
+[Andy "DevOps" Bell](https://github.com/andy-bell)
+
+[Matt "why can't we use React" Butler](https://github.com/mbutlerw)
+
+[Daniel "Kanye" Chambers](https://github.com/danielschambers)

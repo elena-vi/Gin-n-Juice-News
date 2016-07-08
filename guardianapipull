@@ -1,0 +1,165 @@
+
+curl "http://news-summary-api.herokuapp.com/guardian?apiRequestUrl=http://content.guardianapis.com/search?from-date=2016-07-05&show-fields=thumbnail,image&api-key=test"
+
+
+{
+    "response": {
+        "status":"ok",
+        "userTier":"developer",
+        "total":393,
+        "startIndex":1,
+        "pageSize":10,
+        "currentPage":1,
+        "pages":40,
+        "orderBy":"newest",
+        "results":[ {
+
+            "id":"politics/live/2016/jul/06/chilcot-report-live-inquiry-war-iraq",
+            "type":"liveblog",
+            "sectionId":"politics",
+            "sectionName":"Politics",
+            "webPublicationDate":"2016-07-06T11:04:58Z",
+            "webTitle":"Chilcot report live: Blair exaggerated Iraq threat and ignored invasion warnings",
+            "webUrl":"https://www.theguardian.com/politics/live/2016/jul/06/chilcot-report-live-inquiry-war-iraq",
+            "apiUrl":"https://content.guardianapis.com/politics/live/2016/jul/06/chilcot-report-live-inquiry-war-iraq",
+            "fields": {
+                "thumbnail": "https://media.guim.co.uk/be05bee7714ae576f59274ebe8b6be6fd8612219/0_348_5453_3272/500.jpg"
+            }
+            ,
+            "isHosted":false
+        }
+        ,
+        {
+            "id":"football/2016/jul/06/lionel-messi-barcelona-prison-21-months-tax-fraud",
+            "type":"article",
+            "sectionId":"football",
+            "sectionName":"Football",
+            "webPublicationDate":"2016-07-06T11:04:06Z",
+            "webTitle":"Lionel Messi sentenced to 21 months in prison for tax fraud",
+            "webUrl":"https://www.theguardian.com/football/2016/jul/06/lionel-messi-barcelona-prison-21-months-tax-fraud",
+            "apiUrl":"https://content.guardianapis.com/football/2016/jul/06/lionel-messi-barcelona-prison-21-months-tax-fraud",
+            "fields": {
+                "thumbnail": "https://media.guim.co.uk/51f68758577f0cc971fccb0d6fd75dfdbf1cb04a/0_36_3500_2100/500.jpg"
+            }
+            ,
+            "isHosted":false
+        }
+        ,
+        {
+            "id":"commentisfree/live/2016/jul/06/is-britain-letting-down-its-eu-nationals-live",
+            "type":"liveblog",
+            "sectionId":"commentisfree",
+            "sectionName":"Opinion",
+            "webPublicationDate":"2016-07-06T11:03:56Z",
+            "webTitle":"Is Britain letting down its EU nationals? - live",
+            "webUrl":"https://www.theguardian.com/commentisfree/live/2016/jul/06/is-britain-letting-down-its-eu-nationals-live",
+            "apiUrl":"https://content.guardianapis.com/commentisfree/live/2016/jul/06/is-britain-letting-down-its-eu-nationals-live",
+            "fields": {
+                "thumbnail": "https://media.guim.co.uk/4f3f85605eb60cc6c7d1ba2938143dc0ab18f43b/0_16_5175_3106/500.jpg"
+            }
+            ,
+            "isHosted":false
+        }
+        ,
+        {
+            "id":"sport/live/2016/jul/06/tour-de-france-2016-stage-five-live",
+            "type":"liveblog",
+            "sectionId":"sport",
+            "sectionName":"Sport",
+            "webPublicationDate":"2016-07-06T11:03:47Z",
+            "webTitle":"Tour de France 2016: stage five – live!",
+            "webUrl":"https://www.theguardian.com/sport/live/2016/jul/06/tour-de-france-2016-stage-five-live",
+            "apiUrl":"https://content.guardianapis.com/sport/live/2016/jul/06/tour-de-france-2016-stage-five-live",
+            "fields": {
+                "thumbnail": "https://media.guim.co.uk/91d2c9737fb1a8a2deedb49eb3413ebd24a32e14/0_0_5184_3110/500.jpg"
+            }
+            ,
+            "isHosted":false
+        }
+        ,
+        {
+            "id":"us-news/2016/jul/06/campaign-finance-reform-climate-change-real-americans-election-issues",
+            "type":"article",
+            "sectionId":"us-news",
+            "sectionName":"US news",
+            "webPublicationDate":"2016-07-06T11:00:14Z",
+            "webTitle":"From campaign cash to climate change: listen to readers on election issues",
+            "webUrl":"https://www.theguardian.com/us-news/2016/jul/06/campaign-finance-reform-climate-change-real-americans-election-issues",
+            "apiUrl":"https://content.guardianapis.com/us-news/2016/jul/06/campaign-finance-reform-climate-change-real-americans-election-issues",
+            "fields": {
+                "thumbnail": "https://media.guim.co.uk/b35154bc5a6e20a56e3df3057c9679c363ff2782/0_0_4393_2637/500.jpg"
+            }
+            ,
+            "isHosted":false
+        }
+        ,
+        {
+            "id": "childrens-books-site/2016/jul/06/the-rest-of-us-just-live-here-patrick-ness-review", "type": "article", "sectionId": "childrens-books-site", "sectionName": "Children's books", "webPublicationDate": "2016-07-06T11:00:14Z", "webTitle": "The Rest of Us Just Live Here by Patrick Ness - review", "webUrl": "https://www.theguardian.com/childrens-books-site/2016/jul/06/the-rest-of-us-just-live-here-patrick-ness-review", "apiUrl": "https://content.guardianapis.com/childrens-books-site/2016/jul/06/the-rest-of-us-just-live-here-patrick-ness-review", "isHosted": false
+        }
+        ,
+        {
+            "id":"us-news/2016/jul/06/voices-of-america-election-2016-issues",
+            "type":"article",
+            "sectionId":"us-news",
+            "sectionName":"US news",
+            "webPublicationDate":"2016-07-06T11:00:14Z",
+            "webTitle":"Inequality, healthcare and corruption: the issues that matter to you in 2016",
+            "webUrl":"https://www.theguardian.com/us-news/2016/jul/06/voices-of-america-election-2016-issues",
+            "apiUrl":"https://content.guardianapis.com/us-news/2016/jul/06/voices-of-america-election-2016-issues",
+            "fields": {
+                "thumbnail": "https://media.guim.co.uk/5380f4701f914b35f6bc318030d24d0f6c911d3e/0_256_3200_1919/500.jpg"
+            }
+            ,
+            "isHosted":false
+        }
+        ,
+        {
+            "id":"technology/2016/jul/06/tesla-autopilot-crash-joshua-brown-family-potential-lawsuit",
+            "type":"article",
+            "sectionId":"technology",
+            "sectionName":"Technology",
+            "webPublicationDate":"2016-07-06T11:00:14Z",
+            "webTitle":"Tesla fatal autopilot crash: family may have grounds to sue, legal experts say",
+            "webUrl":"https://www.theguardian.com/technology/2016/jul/06/tesla-autopilot-crash-joshua-brown-family-potential-lawsuit",
+            "apiUrl":"https://content.guardianapis.com/technology/2016/jul/06/tesla-autopilot-crash-joshua-brown-family-potential-lawsuit",
+            "fields": {
+                "thumbnail": "https://media.guim.co.uk/7965ea8711a9214c58cbf8cdbd2704f386dd5cfb/0_0_1882_1129/500.jpg"
+            }
+            ,
+            "isHosted":false
+        }
+        ,
+        {
+            "id":"us-news/2016/jul/06/donald-trump-climate-change-florida-resort",
+            "type":"article",
+            "sectionId":"us-news",
+            "sectionName":"US news",
+            "webPublicationDate":"2016-07-06T11:00:14Z",
+            "webTitle":"Water world: rising tides close in on Trump, the climate change denier",
+            "webUrl":"https://www.theguardian.com/us-news/2016/jul/06/donald-trump-climate-change-florida-resort",
+            "apiUrl":"https://content.guardianapis.com/us-news/2016/jul/06/donald-trump-climate-change-florida-resort",
+            "fields": {
+                "thumbnail": "https://media.guim.co.uk/87be981e138ec6dbc2020f0d9261fef850446629/0_0_6042_3626/500.jpg"
+            }
+            ,
+            "isHosted":false
+        }
+        ,
+        {
+            "id":"books/2016/jul/06/let-me-tell-you-about-a-man-i-know-by-susan-fletcher-review",
+            "type":"article",
+            "sectionId":"books",
+            "sectionName":"Books",
+            "webPublicationDate":"2016-07-06T11:00:14Z",
+            "webTitle":"Let Me Tell You About a Man I Know by Susan Fletcher – a portrait of Van Gogh’s ‘faded’ woman",
+            "webUrl":"https://www.theguardian.com/books/2016/jul/06/let-me-tell-you-about-a-man-i-know-by-susan-fletcher-review",
+            "apiUrl":"https://content.guardianapis.com/books/2016/jul/06/let-me-tell-you-about-a-man-i-know-by-susan-fletcher-review",
+            "fields": {
+                "thumbnail": "https://media.guim.co.uk/f11916d2c7d89fc845bf3b87a2a153d76dbba952/0_814_4182_2509/500.jpg"
+            }
+            ,
+            "isHosted":false
+        }
+        ]
+    }
+}
