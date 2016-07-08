@@ -18,10 +18,5 @@ writeJSON.prototype = {
                  articles_array.push(filtered_article)
                  return articles_array
                },[])
-  },
-
-  writeRAW: function(data) {
-    return JSON.parse(data);
   }
-
 };
