@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "http-server ./src/ -p 3000",
-    "test": "mocha --compilers js:babel-core/register --recursive -R nyan && istanbul report text-summary lcov"
+    "test": "http-server ./ -p 8000"
   },
   "babel": {
     "presets": [
