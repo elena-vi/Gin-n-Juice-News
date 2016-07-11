@@ -1,19 +1,19 @@
 // route (path, template, contoller)
 
-route('/', 'home', function (params) {
-  this.snoopDogg = 'Rollin down the street, <br> smokin indo, sippin on gin and juice..'
+var articles;
+
+route('/', 'listArticle', function(params) {
+	if (articles.articles.length != 10) {
+		articles = new Article();
+		articles.storeArticles().then(function (response) {
+			console.log("got articles");
+		});
+	};
 });
 
-route('/gin', 'ginTemplate', function (params) {
-  this.title = "Gin";
+route('/summaryArticle', 'summaryArticle', function (params) {
+	this.title = articles.articles[params].title;
+	this.summary = articles.articles[params].summary.join(' ');
+	this.url = articles.articles[params].url;
+	this.img = articles.articles[params].img;
 });
-
-route('/juice', 'juiceTemplate', function (params) {
-  this.title = "Juice";
-});
-
-
-// Listen on hash change:
-window.addEventListener('hashchange', router);
-// Listen on page load:
-window.addEventListener('load', router);

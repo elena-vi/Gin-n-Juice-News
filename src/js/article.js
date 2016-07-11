@@ -1,39 +1,41 @@
 'use strict';
 
 function Article() {
-
   this.articles = [];
-
-};
+  this.fetch = new Fetch();
+}
 
 Article.prototype = {
 
   storeArticles: function() {
     var self = this;
-    var fetch = new Fetch();
     var jason = new writeJSON();
-    var dateRaw = Date.now()
-    var dates = "#{ dateRaw.getFullYear() }-#{ dateRaw.getMonth() }-#{ dateRaw.getDay() }"
+    var dateRaw = new Date();
+    var dates = dateRaw.getFullYear() + "-" + (dateRaw.getMonth()+1) + "-" + dateRaw.getDate();
 
-    fetch.getData(dates)
-         .then(function(response){ self.articles = jason.parse(response) },
-         function(error) { console.error("failed", error) })
-
+    return this.fetch.getData(dates).then(function(response){
+      self.articles = jason.parse(response);
+    }, function(error) {
+      console.error("failed", error);
+    }).then(function (response) {
+      self.generateSummary();
+    }, function (error) {
+      console.error('failed', error);
+    });
   },
-
+  
   generateSummary: function() {
-    var fetch = new Fetch();
+    var self = this;
+    self.articles.forEach( function(entry) {
+      self.fetch.getSummary(entry.url).then(
+        function(response){ entry.summary = JSON.parse(response).sentences; },
+        function(error) { console.error("failed", error); });
+      });
 
-    this.articles.forEach( function(entry) {
-      fetch.getSummary(entry.url).then(
-        function(response){ entry.summary = JSON.parse(response).text },
-        function(error) { console.error("failed", error) });
-    })
+    },
 
-  },
-
-  getArticles: function(data) {
-
-  }
+    getArticles: function(data) {
+      return this.articles;
+    }
 
 };
