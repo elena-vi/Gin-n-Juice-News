@@ -2,8 +2,8 @@
 
 function Fetch() {
 
-  this.makersApiUrl = "http://news-summary-api.herokuapp.com/guardian?apiRequestUrl=http://content.guardianapis.com/search?from-date="
-  this.thumbnailUrl = "&show-fields=thumbnail,image&api-key=test"
+  this.makersApiUrl = "http://content.guardianapis.com/search?from-date="
+  this.thumbnailUrl = "&show-fields=thumbnail&api-key=test"
   this.summaryApiUrl = "http://news-summary-api.herokuapp.com/aylien?apiRequestUrl=https://api.aylien.com/api/v1/summarize?url="
 
 };

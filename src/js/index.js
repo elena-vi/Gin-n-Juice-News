@@ -3,20 +3,17 @@
 var articles;
 
 route('/', 'listArticle', function(params) {
-	articles = new Article();
-	articles.storeArticles().then(function (response) {
-		// do do do do do do nothing 
-	});
-});
-
-route('/fullArticle', 'fullArticle', function(params) {
-	this.title = params;
-	console.log(params)
+	if (articles.articles.length != 10) {
+		articles = new Article();
+		articles.storeArticles().then(function (response) {
+			console.log("got articles");
+		});
+	};
 });
 
 route('/summaryArticle', 'summaryArticle', function (params) {
 	this.title = articles.articles[params].title;
 	this.summary = articles.articles[params].summary.join(' ');
 	this.url = articles.articles[params].url;
-	// console.log(params)
+	this.img = articles.articles[params].img;
 });

@@ -10,8 +10,8 @@ Article.prototype = {
   storeArticles: function() {
     var self = this;
     var jason = new writeJSON();
-    var dateRaw = Date.now();
-    var dates = "#{ dateRaw.getFullYear() }-#{ dateRaw.getMonth() }-#{ dateRaw.getDay() }";
+    var dateRaw = new Date();
+    var dates = dateRaw.getFullYear() + "-" + (dateRaw.getMonth()+1) + "-" + dateRaw.getDate();
 
     return this.fetch.getData(dates).then(function(response){
       self.articles = jason.parse(response);
