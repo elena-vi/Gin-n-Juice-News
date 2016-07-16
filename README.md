@@ -1,29 +1,33 @@
-# :tropical_drink: Gin-n-Juice
-A web framework
+# :tropical_drink: Gin-n-Juice-News
 
 ## What is it?
 
-### :cocktail: Gin
-The router and controller, routes are declared like this:
+A small application that pulls ten recent headlines from the guardian, and adds a short summary of the
+page content. It is built on top of our web framework [Gin-n-Juice](https://github.com/elena-vi/Gin-n-Juice).
 
+### How do I use it?
+
+At the simplest level, it can be up and running in just four console commands (assuming npm is installed and
+you are using an OS X machine):
 ```
-route('/path', 'template name', function() {
-  this.yourVar = "Declared variables can be interpolated into templates!";
-});
+$ git clone https://github.com/elena-vi/Gin-n-Juice-News.git
+```
+```
+$ cd Gin-n-Juice-News
+```
+```
+$ npm install
+```
+```
+$ npm start
 ```
 
-### :tangerine: Juice
-The templater, takes your template and interpolates js using the dank syntax:
-``` #{yo= yourVar } ``
+Then you should have your own instance of this application running at ``` http://localhost:3000 ```
 
-## :mask: Testing
-Unit testing done using [jasmine](http://jasmine.github.io/), the tests can be found in ```test/spec```
+### Editing your version
 
-Run the test in the browser by opening ```test/SpecRunner.html```
-
-## :sweat: Still left to do!
-
-- Find a more effienct way of pulling in templates.
+For information about how to make changes to your copy of this application, we would recommend looking at the
+documentation of [Gin-n-Juice](https://github.com/elena-vi/Gin-n-Juice) itself.
 
 ## :busts_in_silhouette: Collaborators
 [Elena :heart_eyes_cat: Vilimaitė](https://github.com/elena-vi)
